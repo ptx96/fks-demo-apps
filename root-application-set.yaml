@@ -8,12 +8,10 @@ spec:
       repoURL: https://github.com/clastix/argocd-example-apps.git
       revision: main
       directories:
-      - path: ./*
-      - path: ./root
-        exclude: true
+      - path: config/*
   template:
     metadata:
-      name: '{{path[0]}}'
+      name: '{{path.basename}}'
     spec:
       project: default
       source:

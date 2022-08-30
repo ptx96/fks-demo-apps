@@ -5,7 +5,7 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/clastix/argocd-example-apps.git
+      repoURL: https://github.com/clastix/acme-demo-apps.git
       revision: main
       directories:
       - path: config/*
@@ -19,7 +19,7 @@ spec:
         - CreateNamespace=true
       project: default
       source:
-        repoURL: https://github.com/clastix/argocd-example-apps.git
+        repoURL: https://github.com/clastix/acme-demo-apps.git
         targetRevision: main
         path: '{{path}}'
       destination:

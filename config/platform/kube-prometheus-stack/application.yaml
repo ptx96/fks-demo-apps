@@ -8,6 +8,7 @@ spec:
     automated: {}
     syncOptions:
     - CreateNamespace=true
+    - Replace=true
   project: default
   source:
     chart: kube-prometheus-stack
@@ -18,4 +19,3 @@ spec:
   destination:
     server: "https://kubernetes.default.svc"
     namespace: prometheus-system
-

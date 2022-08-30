@@ -14,7 +14,10 @@ spec:
       name: '{{path.basename}}'
     spec:
       syncPolicy:
-        automated: {}
+        automated:
+          prune: true 
+          allowEmpty: true
+          selfHeal: true
         syncOptions:
         - CreateNamespace=true
       project: default

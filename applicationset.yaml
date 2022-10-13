@@ -5,7 +5,7 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/clastix/acme-demo-apps.git
+      repoURL: https://github.com/ptx96/fks-demo-apps.git
       revision: main
       directories:
       - path: config/*
@@ -22,7 +22,7 @@ spec:
         - CreateNamespace=true
       project: default
       source:
-        repoURL: https://github.com/clastix/acme-demo-apps.git
+        repoURL: https://github.com/ptx96/fks-demo-apps.git
         targetRevision: main
         path: '{{path}}'
       destination:
